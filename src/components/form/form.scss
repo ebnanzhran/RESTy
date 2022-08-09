@@ -1,0 +1,104 @@
+$backgroundColor: #8b8b8b;
+$radius: 40%;
+
+form {
+  display: grid;
+  margin: auto;
+  margin-top: 2%;
+  max-width: 500px;
+  padding: 1em;
+  background: $backgroundColor;
+  opacity: 95%;
+  
+  .label-input {
+    display: flex;
+    grid-gap: 0.5em;
+  }
+
+  .input {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn{
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  label {
+    display: flex;
+    margin: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    &.methods {
+      span {
+        cursor: pointer;
+        margin-right: 1rem;
+        padding: 0.25rem 0.5rem;
+        background: $backgroundColor;
+      }
+      #get {
+        border-radius: $radius;
+        border: 1px solid $backgroundColor;
+        color: $backgroundColor;
+        font-weight: bold;
+        margin-right: 1rem;
+        padding: 0.25rem 0.5rem;
+        background: green;
+        &:hover {
+          background: lightgreen;
+          color: black;
+        }
+      }
+      #post {
+        border-radius: $radius;
+        border: 1px solid $backgroundColor;
+        color: $backgroundColor;
+        font-weight: bold;
+        margin-right: 1rem;
+        padding: 0.25rem 0.5rem;
+        background: blue;
+        &:hover {
+          background: lightskyblue;
+          color: black;
+        }
+      }
+      #put {
+        border-radius: $radius;
+        border: 1px solid $backgroundColor;
+        color: $backgroundColor;
+        font-weight: bold;
+        margin-right: 1rem;
+        padding: 0.25rem 0.5rem;
+        background: yellow;
+        &:hover {
+          background: lightgoldenrodyellow;
+          color: black;
+        }
+      }
+      #delete {
+        border-radius: $radius;
+        border: 1px solid $backgroundColor;
+        color: $backgroundColor;
+        font-weight: bold;
+        margin-right: 1rem;
+        padding: 0.25rem 0.5rem;
+        background: red;
+        &:hover {
+          background: lightcoral;
+          color: black;
+        }
+      }
+    }
+  }
+}

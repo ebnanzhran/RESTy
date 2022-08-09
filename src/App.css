@@ -1,0 +1,57 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./asset/img-1.jpg");
+  height: 100%;
+}
+body #root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+body footer {
+  background: black;
+  border-top: 1px solid #2a2828;
+  padding: 1em 3em;
+  margin: 0;
+  color: #eee;
+  opacity: 95%;
+}
+body header {
+  background: black;
+  border-bottom: 1px solid #2a2828;
+  color: #eee;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  opacity: 95%;
+}
+
+.req {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  background-color: #8b8b8b;
+  opacity: 95%;
+  margin: 10;
+  padding: 0.5em;
+  border: 10px solid #ccc;
+}
+
+.url {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  background-color: #8b8b8b;
+  opacity: 95%;
+  margin: 10;
+  padding: 0.5em;
+  border: 10px solid #ccc;
+}/*# sourceMappingURL=App.css.map */
