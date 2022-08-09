@@ -1,0 +1,95 @@
+form {
+  display: grid;
+  margin: auto;
+  margin-top: 2%;
+  max-width: 500px;
+  padding: 1em;
+  background: #8b8b8b;
+  opacity: 95%;
+}
+form .label-input {
+  display: flex;
+  grid-gap: 0.5em;
+}
+form .input {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+form .btn {
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+form label {
+  display: flex;
+  margin: 1rem 0;
+  justify-content: center;
+  align-items: center;
+}
+form label.methods span {
+  cursor: pointer;
+  margin-right: 1rem;
+  padding: 0.25rem 0.5rem;
+  background: #8b8b8b;
+}
+form label.methods #get {
+  border-radius: 40%;
+  border: 1px solid #8b8b8b;
+  color: #8b8b8b;
+  font-weight: bold;
+  margin-right: 1rem;
+  padding: 0.25rem 0.5rem;
+  background: green;
+}
+form label.methods #get:hover {
+  background: lightgreen;
+  color: black;
+}
+form label.methods #post {
+  border-radius: 40%;
+  border: 1px solid #8b8b8b;
+  color: #8b8b8b;
+  font-weight: bold;
+  margin-right: 1rem;
+  padding: 0.25rem 0.5rem;
+  background: blue;
+}
+form label.methods #post:hover {
+  background: lightskyblue;
+  color: black;
+}
+form label.methods #put {
+  border-radius: 40%;
+  border: 1px solid #8b8b8b;
+  color: #8b8b8b;
+  font-weight: bold;
+  margin-right: 1rem;
+  padding: 0.25rem 0.5rem;
+  background: yellow;
+}
+form label.methods #put:hover {
+  background: lightgoldenrodyellow;
+  color: black;
+}
+form label.methods #delete {
+  border-radius: 40%;
+  border: 1px solid #8b8b8b;
+  color: #8b8b8b;
+  font-weight: bold;
+  margin-right: 1rem;
+  padding: 0.25rem 0.5rem;
+  background: red;
+}
+form label.methods #delete:hover {
+  background: lightcoral;
+  color: black;
+}/*# sourceMappingURL=form.css.map */
