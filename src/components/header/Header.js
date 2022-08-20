@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
   return (
-    <header>RESTy</header>
+    <header data-testid='header'>RESTy</header>
   )
 }
 

@@ -9,7 +9,36 @@ form {
   padding: 1em;
   background: $backgroundColor;
   opacity: 95%;
-  
+
+  .text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    align-items: center;
+    justify-items: center;
+    min-height: 100px;
+    outline: none;
+    resize: none;
+    font-family: monospace;
+    transition: background 0.25s, color 0.25s;
+    &:focus {
+      background: #4a4a4a;
+      color: #eeeeee;
+    }
+    &:hover {
+      background: #4a4a4a;
+      color: #eeeeee;
+    }
+  }
+
+  .label-input-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    margin-bottom: 1em;
+    min-height: 100px;
+  }
+
   .label-input {
     display: flex;
     grid-gap: 0.5em;
@@ -26,77 +55,63 @@ form {
     align-items: center;
   }
 
-  .btn{
+  .btn {
+    cursor: pointer;
     border-radius: 15px;
     border: 1px solid #ccc;
     padding: 0.5em;
     width: 30%;
     justify-content: center;
     align-items: center;
+    &:hover {
+      background: burlywood;
+    }
   }
 
   label {
     display: flex;
+    flex-direction: row;
     margin: 1rem 0;
     justify-content: center;
     align-items: center;
-    &.methods {
-      span {
-        cursor: pointer;
-        margin-right: 1rem;
-        padding: 0.25rem 0.5rem;
-        background: $backgroundColor;
-      }
-      #get {
-        border-radius: $radius;
-        border: 1px solid $backgroundColor;
-        color: $backgroundColor;
-        font-weight: bold;
-        margin-right: 1rem;
-        padding: 0.25rem 0.5rem;
-        background: green;
-        &:hover {
-          background: lightgreen;
-          color: black;
-        }
-      }
-      #post {
-        border-radius: $radius;
-        border: 1px solid $backgroundColor;
-        color: $backgroundColor;
-        font-weight: bold;
-        margin-right: 1rem;
-        padding: 0.25rem 0.5rem;
-        background: blue;
-        &:hover {
-          background: lightskyblue;
-          color: black;
-        }
-      }
-      #put {
-        border-radius: $radius;
-        border: 1px solid $backgroundColor;
-        color: $backgroundColor;
-        font-weight: bold;
-        margin-right: 1rem;
-        padding: 0.25rem 0.5rem;
-        background: yellow;
-        &:hover {
-          background: lightgoldenrodyellow;
-          color: black;
-        }
-      }
-      #delete {
-        border-radius: $radius;
-        border: 1px solid $backgroundColor;
-        color: $backgroundColor;
-        font-weight: bold;
-        margin-right: 1rem;
-        padding: 0.25rem 0.5rem;
-        background: red;
-        &:hover {
-          background: lightcoral;
-          color: black;
+    &.custom-select {
+      padding: 0.5em;
+      position: relative;
+      display: block;
+      max-width: 500px;
+      min-width: 180px;
+      margin: 0 auto;
+      border: 1px solid #6c6b6e;
+      background-color: #39383a;
+      z-index: 10;
+      select {
+        border: none;
+        outline: none;
+        background: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 0;
+        margin: 0;
+        display: block;
+        width: 100%;
+        padding: 12px 55px 15px 15px;
+        font-size: 14px;
+        color: #714bb9;
+
+        &:after {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 50px;
+          height: 100%;
+          line-height: 38px;
+          content: '\2228';
+          text-align: center;
+          color: #714bb9;
+          font-size: 24px;
+          border-left: 1px solid #3c1c78;
+          z-index: -1;
         }
       }
     }
