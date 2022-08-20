@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer>Bahaa Nimer &copy; 2022</footer>
+    <footer>Bnan Zhran &copy; 2022</footer>
   )
 }
 

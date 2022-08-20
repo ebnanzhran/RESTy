@@ -6,7 +6,7 @@ body {
 }
 
 body {
-  background-image: url("./asset/img-1.jpg");
+  /* background-image: url("./asset/img-1.jpg"); */
 }
 body #root {
   display: flex;
